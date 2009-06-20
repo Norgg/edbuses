@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">  
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
+    <title>Administration: EGO Scotland</title>
+    <meta name="language" content="en" />  
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA-8v5uQd8RR7pRFK1fhyysRT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRq2rL2aX8A_YimdivOrCg_tla7CA"
+        type="text/javascript"></script>
+    <script src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=ABQIAAAA-8v5uQd8RR7pRFK1fhyysRT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRq2rL2aX8A_YimdivOrCg_tla7CA"
+        type="text/javascript"></script>
+    
+    <script type="text/javascript">
+    var searchResults;
+    var localSearch = new GlocalSearch();
+
+    function findDetails(query) {
+        document.getElementById('results').innerHTML='<ul>';
+        var resName;
+        localSearch.setCenterPoint("UK");
+        localSearch.setSearchCompleteCallback(null,
+            function() {
+                searchResults = localSearch.results;
+                for (var i=0; i<localSearch.results.length; i++){
+                    document.getElementById('results').innerHTML+='<li><b>'+searchResults[i].titleNoFormatting + '</b><br>' + searchResults[i].streetAddress + ' <br> Lat: ' + searchResults[i].lat + ' Lng: ' + searchResults[i].lng+'<br>Closest stop: ?</li>';
+                }
+                document.getElementById('results').innerHTML+='</ul>';
+            });
+        localSearch.execute(query);
+    }
+
+
+    </script>
+</head>
+<body>
+<form action="" onsubmit="findDetails(document.getElementById('query').value); return false">
+<input type="text" name="query" id="query">
+<input type="submit" >
+</form>
+<div id="results">
+
+</div>
+</body>
+</html>
+
