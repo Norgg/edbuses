@@ -996,3 +996,29 @@ Processing BitchController#index (for 127.0.0.1 at 2009-06-21 13:39:17) [GET]
 Rendering template within layouts/hitch
 Rendering bitch/index
 Completed in 33ms (View: 11, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 13:46:12) [GET]
+Rendering template within layouts/hitch
+Rendering bitch/index
+Completed in 50ms (View: 28, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:51:36) [GET]
+Rendering index/index
+Completed in 96ms (View: 79, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:58:52) [GET]
+Rendering index/index
+Completed in 18ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:59:18) [GET]
+Rendering index/index
+Completed in 22ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:59:33) [GET]
+Rendering index/index
+Completed in 32ms (View: 8, DB: 0) | 200 OK [http://localhost/]
