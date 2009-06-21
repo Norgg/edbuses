@@ -800,3 +800,199 @@ Completed in 36ms (View: 25, DB: 0) | 200 OK [http://localhost/]
 Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:07:11) [GET]
 Rendering index/index
 Completed in 57ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:18:01) [GET]
+Rendering index/index
+Completed in 36ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:18:31) [GET]
+Rendering index/index
+Completed in 38ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:20:47) [GET]
+Rendering index/index
+Completed in 68ms (View: 35, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:24:30) [GET]
+Rendering index/index
+Completed in 33ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:25:00) [GET]
+Rendering index/index
+Completed in 34ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:26:13) [GET]
+Rendering index/index
+Completed in 30ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:26:26) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 34ms (View: 15, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:26:30) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 69ms (View: 27, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:26:32) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 42ms (View: 23, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:26:55) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 49ms (View: 37, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:28:16) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 82ms (View: 61, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:28:33) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 32ms (View: 11, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:28:50) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 33ms (View: 16, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:29:21) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 63ms (View: 25, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:29:40) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 36ms (View: 15, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:30:43) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 34ms (View: 17, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:32:04) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 68ms (View: 22, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:32:50) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 95ms (View: 70, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:33:07) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 42ms (View: 19, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:33:30) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 70ms (View: 17, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:35:01) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 38ms (View: 6, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:35:51) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"38", "from_location"=>"caledonian university"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 85ms (View: 61, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:36:42) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"38", "from_location"=>"caledonian university"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 104ms (View: 47, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:36:58) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"38", "from_location"=>"caledonian university"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 104ms (View: 16, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:37:07) [GET]
+Rendering index/index
+Completed in 50ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:37:12) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 49ms (View: 30, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:37:46) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 62ms (View: 11, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:37:56) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 48ms (View: 17, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:38:18) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 28ms (View: 15, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:38:33) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 39ms (View: 8, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:38:42) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"42", "from_location"=>"cally"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 98ms (View: 31, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:39:08) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"42", "from_location"=>"cally"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 64ms (View: 16, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 13:39:17) [GET]
+Rendering template within layouts/hitch
+Rendering bitch/index
+Completed in 33ms (View: 11, DB: 0) | 200 OK [http://localhost/bitch]
