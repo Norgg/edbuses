@@ -39,7 +39,14 @@ body {
     padding: 10px;
     font-size: 62.5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-	width: 970px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 993px;
+}
+
+div#footer {
+	background: #fff url('/images/footer.png') no-repeat bottom left;
+	height: 252px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -73,7 +80,7 @@ body#bus_stop h2:after {
     content: ':';
 }
 
-body#search fieldset, div.general_container {
+body#search fieldset {
     width: 500px;
     margin: 0 auto;
 }
@@ -125,11 +132,6 @@ input[type=submit] {
     font-size: 1.4em;
 }
 
-div.general_container {
-    width: 500px;
-    margin: 2em auto 0;
-}
-
 div#map_canvas {
     width: 100%;
     height: 400px;
@@ -145,18 +147,13 @@ blockquote p {
 	font-size: 150%;
 }
 
-body#home {
-	padding-bottom: 252px;
-	background: #fff url('/images/footer.png') no-repeat bottom left;
-}
-
-body#home div.links {
+body div.links {
 	position: absolute;
 	left: 800px;
 	top: 175px;
 }
 
-body#home div.links p {
+body div.links p {
 	margin: 20px 10px 120px;
 	font-weight: bold;
 	font-size: 120%;
@@ -166,22 +163,46 @@ body#home div.links p {
 	font-family: Helvetica, sans-serif;
 }
 
-body#home p a {
+body p a {
 	display: block;
 }
 
-body#home p a:link, body#home p a:visited {
+body p a:link, body p a:visited {
     color: #c44;
 	text-decoration: none;
     text-shadow: #aca 1px 1px 2px;
 }
 
-body#home p a:active {
+body p a:active {
 	outline: none;
 }
 
-body#home h1 {
+body h1 {
 	text-indent: -9999px;
 	background: transparent url('/images/heading.png') no-repeat left top;
 	height: 478px;
+}
+
+div.general_container {
+	background: transparent url('/images/left_column.png') repeat-y left top;
+	padding-left: 220px;
+	padding-right: 80px;
+	padding-bottom: 35px;
+}
+
+div#logo {
+	position: absolute;
+	top: 152px;
+	left: 300px;
+	width: 375px;
+	height: 317px;
+}
+
+div#logo a {
+	text-indent: -9999px;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;	
 }
