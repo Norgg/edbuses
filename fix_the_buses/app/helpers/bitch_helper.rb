@@ -1,0 +1,2 @@
+module BitchHelper
+end

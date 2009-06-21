@@ -1,0 +1,13 @@
+<h2>Hitch yourself a ride!</h2>
+<% form_for :hitch, :url => { :action => "lookup" } do |f|%>
+            <fieldset class="bus_route">
+                <legend>Bus route look-up</legend>
+                <p class="from">
+                	<%= f.label :from_location, "Where are you?" %><%= f.text_field :from_location %>
+                </p>
+                <p class="route">
+                	<%= f.label :route, "Which route would you like to use?"%><%= f.text_field :route %> 
+                </p>
+                <p class="submit"><%= f.submit "Find buses!" %></p>
+            </fieldset>
+<% end %>

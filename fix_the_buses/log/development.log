@@ -1,0 +1,802 @@
+# Logfile created on Sat Jun 20 16:26:08 +0100 2009/!\ FAILSAFE /!\  Sat Jun 20 16:26:41 +0100 2009
+  Status: 500 Internal Server Error
+  no such file to load -- sqlite3
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:156:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/dependencies.rb:156:in `require'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/kernel/requires.rb:7:in `require_library_or_gem'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/kernel/reporting.rb:11:in `silence_warnings'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/kernel/requires.rb:5:in `require_library_or_gem'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:10:in `sqlite3_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sat Jun 20 22:20:14 +0100 2009
+  Status: 500 Internal Server Error
+  could not open database: unable to open database file
+    /usr/lib/ruby/1.8/sqlite3/errors.rb:62:in `check'
+    /usr/lib/ruby/1.8/sqlite3/database.rb:79:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+/!\ FAILSAFE /!\  Sun Jun 21 10:29:09 +0100 2009
+  Status: 500 Internal Server Error
+  could not open database: unable to open database file
+    /usr/lib/ruby/1.8/sqlite3/errors.rb:62:in `check'
+    /usr/lib/ruby/1.8/sqlite3/database.rb:79:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `new'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/sqlite3_adapter.rb:13:in `sqlite3_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `send'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:223:in `new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:245:in `checkout_new_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:188:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `loop'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:184:in `checkout'
+    /usr/lib/ruby/1.8/monitor.rb:242:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:183:in `checkout'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:98:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:326:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:123:in `retrieve_connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_specification.rb:115:in `connection'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+    /usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+  [4;36;1mSQL (3.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (61.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (15.7ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRoutes (20090620134705)
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "routes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "number" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090620134705')[0m
+Migrating to CreateStops (20090620134806)
+  [4;36;1mSQL (1.6ms)[0m   [0;1mCREATE TABLE "stops" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" float, "lng" float, "name" varchar(255), "number" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (1.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090620134806')[0m
+Migrating to CreateRoutesStops (20090620140830)
+  [4;36;1mSQL (1.7ms)[0m   [0;1mCREATE TABLE "routes_stops" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "stop_id" integer, "route_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090620140830')[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mPRAGMA index_list("routes")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mPRAGMA index_list("routes_stops")[0m
+  [4;35;1mSQL (20.7ms)[0m   [0mPRAGMA index_list("stops")[0m
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 10:35:19) [GET]
+Rendering hitch/index
+Completed in 52ms (View: 33, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 10:46:12) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 127ms (View: 115, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 10:48:09) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 47ms (View: 34, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-21 10:48:09) [GET]
+
+ActionController::RoutingError (No route matches "/main.css" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 10:48:46) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 110ms (View: 89, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 11:00:27) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 189ms (View: 167, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 11:00:55) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 40ms (View: 7, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 11:04:08) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 78ms (View: 60, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 11:05:03) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 75ms (View: 45, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 11:05:32) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 33ms (View: 11, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 11:05:49) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"7", "from_location"=>"Royal Infirmary"}}
+
+ActionController::UnknownAction (No action responded to lookup. Actions: index):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 11:07:18) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"7", "from_location"=>"Royal Infirmary"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 95ms (View: 58, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 11:09:48) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"7", "from_location"=>"Royal Infirmary"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 125ms (View: 91, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 11:11:04) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"7", "from_location"=>"Royal Infirmary"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 127ms (View: 108, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 11:11:14) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "hitch"=>{"route"=>"7", "from_location"=>"Royal Infirmary"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 53ms (View: 40, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-21 11:16:38) [GET]
+
+ActionController::RoutingError (No route matches "/bitch" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 11:23:23) [GET]
+Rendering bitch/index
+Completed in 99ms (View: 69, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 11:47:10) [GET]
+Rendering bitch/index
+Completed in 107ms (View: 60, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 11:48:05) [GET]
+Rendering template within layouts/hitch
+Rendering bitch/index
+Completed in 44ms (View: 32, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 11:48:44) [GET]
+Rendering template within layouts/hitch
+Rendering bitch/index
+Completed in 24ms (View: 8, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 11:49:14) [GET]
+Rendering template within layouts/hitch
+Rendering bitch/index
+Completed in 30ms (View: 12, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing BitchController#lookup (for 127.0.0.1 at 2009-06-21 11:52:39) [POST]
+  Parameters: {"commit"=>"Bitch away!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "bitch"=>{"from_location"=>"Caledonian University", "bitch_text"=>"I would like to say that I saw the drive PEEING in his cab!"}}
+
+ActionController::UnknownAction (No action responded to lookup. Actions: index and show):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BitchController#lookup (for 127.0.0.1 at 2009-06-21 11:52:59) [POST]
+  Parameters: {"commit"=>"Bitch away!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "bitch"=>{"from_location"=>"Caledonian University", "bitch_text"=>"I would like to say that I saw the drive PEEING in his cab!"}}
+
+ActionController::UnknownAction (No action responded to lookup. Actions: index and show):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 11:53:03) [GET]
+Rendering template within layouts/hitch
+Rendering bitch/index
+Completed in 76ms (View: 48, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing BitchController#show (for 127.0.0.1 at 2009-06-21 11:53:07) [POST]
+  Parameters: {"commit"=>"Bitch away!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "bitch"=>{"from_location"=>"Caledonian University", "bitch_text"=>"I would like to say that I saw the drive PEEING in his cab!"}}
+Rendering template within layouts/hitch
+Rendering bitch/show
+Completed in 107ms (View: 40, DB: 0) | 200 OK [http://localhost/bitch/show]
+
+
+Processing BitchController#show (for 127.0.0.1 at 2009-06-21 11:54:00) [POST]
+  Parameters: {"commit"=>"Bitch away!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "bitch"=>{"from_location"=>"Caledonian University", "bitch_text"=>"I would like to say that I saw the drive PEEING in his cab!"}}
+Rendering template within layouts/hitch
+Rendering bitch/show
+Completed in 34ms (View: 7, DB: 0) | 200 OK [http://localhost/bitch/show]
+
+
+Processing BitchController#show (for 127.0.0.1 at 2009-06-21 11:54:22) [POST]
+  Parameters: {"commit"=>"Bitch away!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "bitch"=>{"from_location"=>"Caledonian University", "bitch_text"=>"I would like to say that I saw the drive PEEING in his cab!"}}
+Rendering template within layouts/hitch
+Rendering bitch/show
+Completed in 32ms (View: 4, DB: 0) | 200 OK [http://localhost/bitch/show]
+
+
+Processing BitchController#show (for 127.0.0.1 at 2009-06-21 11:54:46) [POST]
+  Parameters: {"commit"=>"Bitch away!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "bitch"=>{"from_location"=>"Caledonian University", "bitch_text"=>"I would like to say that I saw the drive PEEING in his cab!"}}
+Rendering template within layouts/hitch
+Rendering bitch/show
+Completed in 23ms (View: 12, DB: 0) | 200 OK [http://localhost/bitch/show]
+
+
+Processing BitchController#show (for 127.0.0.1 at 2009-06-21 11:54:59) [POST]
+  Parameters: {"commit"=>"Bitch away!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "bitch"=>{"from_location"=>"Caledonian University", "bitch_text"=>"I would like to say that I saw the drive PEEING in his cab!"}}
+Rendering template within layouts/hitch
+Rendering bitch/show
+Completed in 75ms (View: 32, DB: 0) | 200 OK [http://localhost/bitch/show]
+
+
+Processing BitchController#show (for 127.0.0.1 at 2009-06-21 11:55:24) [POST]
+  Parameters: {"commit"=>"Bitch away!", "authenticity_token"=>"Z6Nr1fvyXJ5/PR8R59XyJvVsFVnL9C8VZfqHfQtWfW8=", "bitch"=>{"from_location"=>"Caledonian University", "bitch_text"=>"I would like to say that I saw the drive PEEING in his cab!"}}
+Rendering template within layouts/hitch
+Rendering bitch/show
+Completed in 64ms (View: 55, DB: 0) | 200 OK [http://localhost/bitch/show]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-21 12:05:15) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:06:51) [GET]
+Rendering index/index
+Completed in 63ms (View: 37, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:11:39) [GET]
+Rendering index/index
+Completed in 107ms (View: 79, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:14:29) [GET]
+Rendering index/index
+Completed in 22ms (View: 14, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:14:52) [GET]
+Rendering index/index
+Completed in 32ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:15:42) [GET]
+Rendering index/index
+Completed in 31ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:16:40) [GET]
+Rendering index/index
+Completed in 27ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:16:54) [GET]
+Rendering index/index
+Completed in 29ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:17:08) [GET]
+Rendering index/index
+Completed in 34ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:17:55) [GET]
+Rendering index/index
+Completed in 44ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:18:22) [GET]
+Rendering index/index
+Completed in 164ms (View: 39, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 12:18:26) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 153ms (View: 114, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:21:12) [GET]
+Rendering index/index
+Completed in 55ms (View: 36, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 12:21:14) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 189ms (View: 172, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 12:21:38) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+ERROR: compiling _run_erb_app47views47layouts47hitch46html46erb RAISED compile error
+/home/douglas/sites/fix_the_buses/fix_the_buses/app/views/layouts/hitch.html.erb:11: syntax error, unexpected ':', expecting ')'
+...nk_to "Hitch &#8217;n Bitch" :controller => 'index' ).to_s);...
+                              ^
+Function body:           def _run_erb_app47views47layouts47hitch46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html>\n    <head>\n        <meta http-equiv=\"Content-type\" content=\"text/html; charset=utf-8\" />\n        <title>Hitch 'n Bitch</title>\n        "
+
+
+
+
+
+; @output_buffer.concat(( stylesheet_link_tag "main" ).to_s); @output_buffer.concat "\n        \n    </head>\n    <body id=\"search\">\n        <h1>"
+
+
+
+; @output_buffer.concat(( link_to "Hitch &#8217;n Bitch" :controller => 'index' ).to_s); @output_buffer.concat "</h1>\n\t\t<div class=\"general_container\">\n"
+
+; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n\t\t</div>\n    </body>\n</html>"
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/douglas/sites/fix_the_buses/fix_the_buses/app/views/layouts/hitch.html.erb:19:in `compile!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:46:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/webrick.rb:13:in `run'
+/usr/lib/ruby/gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/douglas/sites/fix_the_buses/fix_the_buses/app/views/layouts/hitch.html.erb:11: syntax error, unexpected ':', expecting ')'
+...nk_to "Hitch &#8217;n Bitch" :controller => 'index' ).to_s);...
+                              ^) on line #11 of app/views/layouts/hitch.html.erb:
+8:         
+9:     </head>
+10:     <body id="search">
+11:         <h1><%= link_to "Hitch &#8217;n Bitch" :controller => 'index' %></h1>
+12: 		<div class="general_container">
+13: <%= yield %>
+14: 		</div>
+
+    app/views/layouts/hitch.html.erb:19:in `compile!'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (337.1ms)
+Rendered rescues/_request_and_response (56.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 12:22:06) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 80ms (View: 57, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 12:23:31) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 29ms (View: 9, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:23:38) [GET]
+Rendering index/index
+Completed in 51ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing BitchController#index (for 127.0.0.1 at 2009-06-21 12:23:41) [GET]
+Rendering template within layouts/hitch
+Rendering bitch/index
+Completed in 61ms (View: 43, DB: 0) | 200 OK [http://localhost/bitch]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:23:43) [GET]
+Rendering index/index
+Completed in 59ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 12:23:45) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 32ms (View: 17, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:24:35) [GET]
+Rendering index/index
+Completed in 53ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 12:24:40) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 40ms (View: 27, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:33:00) [GET]
+Rendering index/index
+Completed in 45ms (View: 21, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:46:00) [GET]
+Rendering index/index
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:46:43) [GET]
+Rendering index/index
+Completed in 20ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:47:51) [GET]
+Rendering index/index
+Completed in 24ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:49:53) [GET]
+Rendering index/index
+Completed in 21ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:50:27) [GET]
+Rendering index/index
+Completed in 32ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:53:23) [GET]
+Rendering index/index
+Completed in 39ms (View: 28, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 12:53:39) [GET]
+Rendering index/index
+Completed in 45ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:01:52) [GET]
+Rendering index/index
+Completed in 37ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:04:03) [GET]
+Rendering index/index
+Completed in 67ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:04:53) [GET]
+Rendering index/index
+Completed in 37ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:05:11) [GET]
+Rendering index/index
+Completed in 23ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:05:34) [GET]
+Rendering index/index
+Completed in 28ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:05:44) [GET]
+Rendering index/index
+Completed in 23ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:06:04) [GET]
+Rendering index/index
+Completed in 22ms (View: 6, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:06:18) [GET]
+Rendering index/index
+Completed in 26ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:06:39) [GET]
+Rendering index/index
+Completed in 47ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:07:05) [GET]
+Rendering index/index
+Completed in 36ms (View: 25, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:07:11) [GET]
+Rendering index/index
+Completed in 57ms (View: 3, DB: 0) | 200 OK [http://localhost/]

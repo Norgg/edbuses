@@ -1,0 +1,2 @@
+module HitchHelper
+end
