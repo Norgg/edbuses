@@ -800,3 +800,435 @@ Completed in 36ms (View: 25, DB: 0) | 200 OK [http://localhost/]
 Processing IndexController#index (for 127.0.0.1 at 2009-06-21 13:07:11) [GET]
 Rendering index/index
 Completed in 57ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:20:26) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:20:40) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:20:58) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 16ms (View: 13, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:21:11) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:28:34) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;36;1mRoute Load (0.5ms)[0m   [0;1mSELECT * FROM "routes" WHERE ("routes"."number" = '41') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/models/route.rb:45:in `get_stops_by_address'
+  app/controllers/hitch_controller.rb:8:in `lookup'
+
+Rendered rescues/_trace (46.6ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:30:59) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/hitch_controller.rb:6:in `lookup'
+
+Rendered rescues/_trace (85.3ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:31:25) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/hitch_controller.rb:6:in `lookup'
+
+Rendered rescues/_trace (84.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#index (for 127.0.0.1 at 2009-06-21 13:33:41) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/index
+Completed in 28ms (View: 23, DB: 0) | 200 OK [http://localhost/hitch]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:33:43) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;35;1mRoute Load (0.5ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.get_stops_by_address):
+  app/controllers/hitch_controller.rb:8:in `lookup'
+
+Rendered rescues/_trace (83.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:36:38) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 16ms (View: 10, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:37:15) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;36;1mRoute Load (0.4ms)[0m   [0;1mSELECT * FROM "routes" WHERE ("routes"."number" IS NULL) LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.get_stops_by_address):
+  app/controllers/hitch_controller.rb:9:in `lookup'
+
+Rendered rescues/_trace (81.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:38:38) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:38:51) [GET]
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:39:00) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:41:07) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:41:37) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:41:51) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+
+NameError (undefined local variable or method `route_str' for #<HitchController:0xb6790160>):
+  app/controllers/hitch_controller.rb:8:in `lookup'
+
+Rendered rescues/_trace (83.2ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:43:57) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/hitch_controller.rb:7:in `lookup'
+
+Rendered rescues/_trace (80.8ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:44:05) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+
+NameError (undefined local variable or method `route_str' for #<HitchController:0xb6819d98>):
+  app/controllers/hitch_controller.rb:8:in `lookup'
+
+Rendered rescues/_trace (69.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:44:16) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/hitch_controller.rb:7:in `lookup'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:44:31) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;35;1mRoute Load (0.7ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '41') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+  app/controllers/hitch_controller.rb:10:in `lookup'
+
+Rendered rescues/_trace (195.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:44:55) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;36;1mRoute Load (0.9ms)[0m   [0;1mSELECT * FROM "routes" WHERE ("routes"."number" = '41') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+  app/controllers/hitch_controller.rb:10:in `lookup'
+
+Rendered rescues/_trace (69.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:44:56) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;35;1mRoute Load (1.0ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '41') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+  app/controllers/hitch_controller.rb:10:in `lookup'
+
+Rendered rescues/_trace (46.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:45:03) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 20ms (View: 13, DB: 0) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:45:09) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;36;1mRoute Load (0.5ms)[0m   [0;1mSELECT * FROM "routes" WHERE ("routes"."number" = '41') LIMIT 1[0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 14ms (View: 2, DB: 1) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:45:14) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;35;1mRoute Load (0.6ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '41') LIMIT 1[0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 88ms (View: 2, DB: 1) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:45:17) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"41", "from_location"=>"somewhere"}}
+  [4;36;1mRoute Load (0.5ms)[0m   [0;1mSELECT * FROM "routes" WHERE ("routes"."number" = '41') LIMIT 1[0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.map):
+  app/controllers/hitch_controller.rb:10:in `lookup'
+
+Rendered rescues/_trace (72.3ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:46:22) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.8ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (192.3ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+
+NameError (undefined local variable or method `route_str' for #<HitchController:0xb65fab70>):
+  app/controllers/hitch_controller.rb:10:in `lookup'
+  app/controllers/hitch_controller.rb:10:in `map'
+  app/controllers/hitch_controller.rb:10:in `lookup'
+
+Rendered rescues/_trace (46.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:46:31) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/hitch_controller.rb:7:in `lookup'
+
+Rendered rescues/_trace (80.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:46:34) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/hitch_controller.rb:7:in `lookup'
+
+Rendered rescues/_trace (160.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:46:36) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.7ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (92.8ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 207550ms (View: 3, DB: 94) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:50:49) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.8ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (90.9ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2571ms (View: 3, DB: 92) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:51:28) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.7ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (50.0ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2491ms (View: 11, DB: 51) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:53:06) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.8ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (93.2ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2536ms (View: 3, DB: 94) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:58:46) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.8ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (91.8ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2517ms (View: 12, DB: 93) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:59:12) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.8ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (91.3ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2889ms (View: 12, DB: 92) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:59:24) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.8ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (93.5ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2564ms (View: 13, DB: 94) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 13:59:54) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.7ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (91.7ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2509ms (View: 12, DB: 92) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 14:00:06) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.9ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (62.7ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2975ms (View: 3, DB: 64) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 14:00:50) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.8ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (50.8ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2447ms (View: 12, DB: 52) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 14:00:58) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (1.9ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (65.9ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2497ms (View: 12, DB: 68) | 200 OK [http://localhost/hitch/lookup]
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 14:04:32) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/hitch_controller.rb:7:in `lookup'
+
+Rendered rescues/_trace (205.0ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 14:04:34) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]):
+  app/controllers/hitch_controller.rb:7:in `lookup'
+
+Rendered rescues/_trace (83.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing HitchController#lookup (for 127.0.0.1 at 2009-06-21 14:04:47) [POST]
+  Parameters: {"commit"=>"Find buses!", "authenticity_token"=>"4u+SFHUoBXbsxgLyGpr6e49YpmF9RI5xWlb4peDdTh0=", "hitch"=>{"route"=>"24", "from_location"=>"edinburgh waverly"}}
+  [4;35;1mRoute Load (0.8ms)[0m   [0mSELECT * FROM "routes" WHERE ("routes"."number" = '24') LIMIT 1[0m
+  [4;36;1mStop Load (89.8ms)[0m   [0;1mSELECT * FROM "stops" INNER JOIN "routes_stops" ON "stops".id = "routes_stops".stop_id WHERE ("routes_stops".route_id = 22 ) [0m
+Rendering template within layouts/hitch
+Rendering hitch/lookup
+Completed in 2571ms (View: 12, DB: 91) | 200 OK [http://localhost/hitch/lookup]
