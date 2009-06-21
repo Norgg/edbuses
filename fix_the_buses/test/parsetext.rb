@@ -14,12 +14,13 @@ def fromTxt(q)
     q = q.split("--").first
     feedback = q.split.find{|string| $keywords.member? string}
     if feedback
-        q=q.delete("bitch")
         comment = q.split()[1..-1].join(" ")   
-        addComment(comment)
+        puts comment
+        puts feedback
+#        addComment(feedback, comment)
     else
         num = q.split.find{|string| $services.member? string}
-        q=q.delete(num.to_s)
+        q=q.sub(num.to_s,"")
         addr = q.split()[1..-1].join(" ")    
         return GPSFromAddr(num,addr)
     end
@@ -54,7 +55,8 @@ def GPSFromAddr(route,addr)
 end
 
 
-query="fixthebuses@gmail.com 42 Bruntsfield Pl -- Something else here"
+#query="fixthebuses@gmail.com 42 Bruntsfield Pl -- Something else here"
+query="fixthebuses@gmail.com happy about the 42 arriving on time"
 info = fromTxt(query)
 
 def getTexts()
