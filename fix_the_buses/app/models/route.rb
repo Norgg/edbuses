@@ -1,10 +1,9 @@
 class Route < ActiveRecord::Base
   has_and_belongs_to_many :stops
+  APIKEY = 'ABQIAAAA-8v5uQd8RR7pRFK1fhyysRT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRq2rL2aX8A_YimdivOrCg_tla7CA'
+  CENTER = 'Edinburgh'
 
   def self.scrape
-    require 'nokogiri'
-    require 'open-uri'
-
     doc = Nokogiri::HTML(open("http://www.mybustracker.co.uk/index.php?display=Service"))
     routes = []
     doc.search("select#serviceService", "option").each do |route_opt|
@@ -39,6 +38,20 @@ class Route < ActiveRecord::Base
       route.save
 
       puts " done."
+    end
+  end
+
+  def get_stops_by_address(addr)
+    url = 'http://maps.google.co.uk/maps/geo?q='+CGI.escape(addr+', '+CENTER)+'&output=xml&oe=utf8&sensor=true_or_false&key='+APIKEY
+    doc = Nokogiri::XML(open(url))
+    code = doc.search('code').inner_html
+    if code=='200'
+      data = doc.search('Placemark').first.search('coordinates').inner_html
+      lng = data.split(',')[0]
+      lat = data.split(',')[1]
+      return get_nearby_stops(lat.to_f, lng.to_f)
+    else
+      return nil
     end
   end
 
