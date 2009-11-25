@@ -41,6 +41,5 @@ class Stop < ActiveRecord::Base
       end
     end
     retstr.strip
-
   end
 end
