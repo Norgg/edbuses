@@ -19,7 +19,7 @@
       function initialize() {
         var map = new GMap2(document.getElementById("stopMap<%=stop.number%>"));
         var latlng = new GLatLng(<%=stop.lat%>, <%=stop.lng%>)
-        map.setCenter(latlng, 13);
+        map.setCenter(latlng, 14);
         map.addOverlay(new GMarker(latlng));
       }
       google.setOnLoadCallback(initialize);
