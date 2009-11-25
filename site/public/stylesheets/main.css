@@ -1,208 +1,21 @@
-/* BEGIN css reset */
-
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
-	margin:0;
-	padding:0;
-}
-table {
-	border-collapse:collapse;
-	border-spacing:0;
-}
-fieldset,img { 
-	border:0;
-}
-address,caption,cite,code,dfn,em,strong,th,var {
-	font-style:normal;
-	font-weight:normal;
-}
-ol,ul {
-	list-style:none;
-}
-caption,th {
-	text-align:left;
-}
-h1,h2,h3,h4,h5,h6 {
-	font-size:100%;
-	font-weight:normal;
-}
-q:before,q:after {
-	content:'';
-}
-abbr,acronym {
-    border:0;
-}
-
-/* END css reset */
-
 body {
-    background-color: #fff;
-    padding: 10px;
-    font-size: 62.5%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-	margin-left: auto;
-	margin-right: auto;
-	width: 993px;
+  background-color: #fff;
 }
 
-div#footer {
-	background: #fff url('/images/footer.png') no-repeat bottom left;
-	height: 252px;
-	margin-left: auto;
-	margin-right: auto;
+#contents {
+  width: 800px;
+  margin-right: auto;
 }
 
-h1 {
-    font-family: 'Gill Sans', Helvetica, sans-serif;
-    text-align: center;
-    color: #0b0;
-    text-shadow: #aca 1px 1px 2px;
-    font-size: 6em;
+table.times {
+  border-collapse: collapse;
 }
 
-h1 a:link, h1 a:visited {
-	color: #0b0;
-	text-decoration: none;
+table.times td, th {
+  border: 1px solid #ccc;
 }
 
-h1 a:hover, h1 a:active {
-	color: #4d4;
-}
-
-h2 {
-    padding: 0 1em;
-    font-size: 2em;
-    font-style: italic;
-    letter-spacing: 1px;
-	text-align: center;
-}
-
-body#bus_stop h2:after {
-    content: ':';
-}
-
-body#search fieldset {
-    width: 500px;
-    margin: 0 auto;
-}
-
-legend {
-    visibility: hidden;
-}
-
-fieldset p, ul#buses li {
-    color: #333;
-    margin: 1em 0;
-    padding: 0 1em;
-    font-size: 2em;
-}
-
-fieldset p, ul#buses li, h2 {
-    text-shadow: #ccc 1px 1px 2px;
-}
-
-label, input {
-    display: block;
-}
-
-label {
-    padding: 0 0 0.2em 5px;
-}
-
-input[type=text], textarea {
-    width: 100%;
-    font-size: inherit;
-    padding: 2px 5px;
-    font-family: Helvetica;
-}
-
-textarea {
-	height: 3em;
-}
-
-span.help {
-    font-style: italic;
-    color: #666;
-    font-size: 80%;
-}
-
-input[type=submit] {
-    cursor: pointer;
-    margin: 0 auto;
-    display: block;
-    font-size: 1.4em;
-}
-
-div#map_canvas {
-    width: 100%;
-    height: 400px;
-}
-
-blockquote {
-	background-color: #dcc;
-	margin: 2em 1em;
-	padding: 1.5em;
-}
-
-blockquote p {
-	font-size: 150%;
-}
-
-body div.links {
-	position: absolute;
-	left: 800px;
-	top: 175px;
-}
-
-body div.links p {
-	margin: 20px 10px 120px;
-	font-weight: bold;
-	font-size: 120%;
-	color: #c44;
-	width: 240px;
-	text-align: right;
-	font-family: Helvetica, sans-serif;
-}
-
-body p a {
-	display: block;
-}
-
-body p a:link, body p a:visited {
-    color: #c44;
-	text-decoration: none;
-    text-shadow: #aca 1px 1px 2px;
-}
-
-body p a:active {
-	outline: none;
-}
-
-body h1 {
-	text-indent: -9999px;
-	background: transparent url('/images/heading.png') no-repeat left top;
-	height: 478px;
-}
-
-div.general_container {
-	background: transparent url('/images/left_column.png') repeat-y left top;
-	padding-left: 220px;
-	padding-right: 80px;
-	padding-bottom: 35px;
-}
-
-div#logo {
-	position: absolute;
-	top: 152px;
-	left: 300px;
-	width: 375px;
-	height: 317px;
-}
-
-div#logo a {
-	text-indent: -9999px;
-	display: block;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;	
+div.stopMap {
+  width: 200px;
+  height: 200px;
 }

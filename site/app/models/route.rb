@@ -1,7 +1,5 @@
 class Route < ActiveRecord::Base
   has_and_belongs_to_many :stops
-  APIKEY = 'ABQIAAAA-8v5uQd8RR7pRFK1fhyysRT2yXp_ZAY8_ufC3CFXhHIE1NvwkxRq2rL2aX8A_YimdivOrCg_tla7CA'
-  CENTER = 'Edinburgh'
 
   def self.scrape
     doc = Nokogiri::HTML(open("http://www.mybustracker.co.uk/index.php?display=Service"))
@@ -31,11 +29,13 @@ class Route < ActiveRecord::Base
         args[:name] = (stop.search("nom")).inner_html
         args[:lat] = (stop.search("x")).inner_html
         args[:lng] = (stop.search("y")).inner_html
-        stop = Stop.new(args)
-        stop.save
+
+        stop = Stop.find_by_number(:first, args[:number])
+        stop ||= Stop.new(args)
+        stop.save!
         route.stops << stop
       end
-      route.save
+      route.save!
 
       puts " done."
     end

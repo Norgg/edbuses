@@ -1,63 +1,40 @@
-			<h2>Buses from your nearest stop</h2>
-            <ul id="buses">
-                <li>
-                    <p><%= @times_str %></p>
-                </li>
-            </ul>
-            <div id="map_canvas"><p>Showing map.</p></div>
-			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-        	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAA83ECdSvZmx5OfTy9U6ASRhR_eqJbojUL23zoujGPSgQ7MMe5KBTWDQxQl9uB99XtUjExXY6EjRX9Eg" type="text/javascript"></script>
-            <script type="text/javascript"><!--//--><![CDATA[//><!--
+<% form_for :hitch, :url => { :action => "lookup" } do |f|%>
+  <p class="from">
+    <%= f.label :from_location, "Where are you?" %><br/>
+    <%= f.text_field :from_location, :value => @place %>
+  </p>
+  <p class="submit"><%= f.submit "Find buses!" %></p>
+<% end %>
 
-            jQuery(function() {
-                var routes = new Array(
-                    {
-                        'name': '41',
-                        'colour_coding': '#ff0000',
-                        'points': new Array(
-                            {'lat': 55.92460984958644, 'lng': -3.177280426025390},
-                            {'lat': 55.95068962317456, 'lng': -3.209123611450195},
-                            {'lat': 55.97571929527172, 'lng': -3.298473358154297}
-                        )
-                    },
-                    {
-                        'name': '7',
-                        'colour_coding': '#0000ff',
-                        'points': new Array(
-                            {'lat': 55.97062819767055, 'lng': -3.1720447540283203},
-                            {'lat': 55.95342878289969, 'lng': -3.1890392303466797},
-                            {'lat': 55.92646125107424, 'lng': -3.1668949127197266}
-                        )
-                    }
-                );
-                var bounds = new GLatLngBounds(
-                        new GLatLng(55.92460984958644, -3.298473358154297),
-                        new GLatLng(55.97571929527172, -3.1668949127197266)
-                    );
-                var mapping = {
-                    init: function(bounds) {
-                        this.map = new GMap2(document.getElementById("map_canvas"));
-                        var zoom_size = (bounds !== "undefined") ? this.map.getBoundsZoomLevel(bounds, new GSize(parseInt(jQuery('#map_canvas').css('width')), parseInt(jQuery('#map_canvas').css('height')))) : 13;
-                        var center_point = (bounds !== "undefined") ? bounds.getCenter() : new GLatLng(55.93593327201702, -3.1959915161132812);
-                        this.map.setCenter(center_point, zoom_size);
-                        this.map.setUIToDefault();
-                        //initialise();
-                    },
-                    plot_line: function(points, color) {
-                        //console.log('color is: ' + color);
-                        var lat_lng_arr = new Array();
-                        jQuery.each(points, function(i, point) {
-                            lat_lng_arr.push(new GLatLng(point.lat, point.lng));
-                        });
-                        var polyline = new GPolyline(lat_lng_arr, color);
-                        this.map.addOverlay(polyline);
-                    }
-                };
-                mapping.init(bounds);
-                //jQuery.each(routes, function(i, route) {
-                    //console.log(typeof mapping);
-                    //mapping.plot_line(route.points, route.colour_coding);
-                //});
-            });
+<h2>Buses from <%=h(sanitize(@place)) %></h2>
 
-            //--><!]]></script>
+<% for stop in @stops %>
+  <h3><%= stop.name %>: <%= stop.number%></h3>
+
+  <div id="stopMap<%=stop.number%>" class="stopMap">
+    <script type="text/javascript" src="http://www.google.com/jsapi?key=<%=APIKEY%>"></script>
+    <script type="text/javascript">
+      google.load("maps", "2");
+
+      function initialize() {
+        var map = new GMap2(document.getElementById("stopMap<%=stop.number%>"));
+        var latlng = new GLatLng(<%=stop.lat%>, <%=stop.lng%>)
+        map.setCenter(latlng, 13);
+        map.addOverlay(new GMarker(latlng));
+      }
+      google.setOnLoadCallback(initialize);
+    </script>
+  </div>
+
+  <table class="times">
+  <tr><th>Route</th><th>Destination</th><th>Arrival Time</th></tr>
+  <% for time in stop.times %>
+    <tr>
+      <td><%= time[:route] %></td>
+      <td><%= time[:dest] %></td>
+      <td><%= time[:time] %></td>
+    </tr>
+  <% end %>
+  </table>
+<% end %>
+

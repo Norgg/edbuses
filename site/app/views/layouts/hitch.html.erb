@@ -1,21 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <title>Hitch 'n Bitch</title>
-        <%= stylesheet_link_tag "main" %>
-        
-    </head>
-    <body id="search">
-        <h1>Hitch &#8217;n Bitch</h1>
-		<div class="links">
-    	    <p><%= link_to "Search for bus routes<br />See live bus times and locations", :controller => "hitch" %></p>
-			<p><%= link_to "Help us improve the bus service<br />Tell us your gripes and props", :controller => "bitch" %></p>
-		</div>
-		<div class="general_container">
-<%= yield %>
-		</div>
-		<div id="footer"></div>
-    </body>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Buses</title>
+    <%= stylesheet_link_tag "main" %>
+  </head>
+
+  <body id="search">
+  <div id="contents">
+    <%= yield %>
+  </div>
+  </body>
 </html>
