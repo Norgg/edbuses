@@ -1,4 +1,4 @@
-<% form_for :hitch, :url => { :action => "lookup" } do |f|%>
+<% form_for :hitch, :url => { :action => "lookup" }, :html => { :method => :get } do |f|%>
   <p class="from">
     <%= f.label :from_location, "Where are you?" %><br/>
     <%= f.text_field :from_location %>
