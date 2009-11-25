@@ -16,7 +16,7 @@ class Route < ActiveRecord::Base
       route = Route.new(:number => route_str)
       route.save!
 
-      print "Adding stops to route: #{route_str}..."
+      puts "Adding stops to route: #{route_str}..."
 
       route_doc = Nokogiri::XML(open("http://mybustracker.co.uk/getServicePoints.php?serviceMnemo=#{route_str}"))
 
@@ -30,14 +30,18 @@ class Route < ActiveRecord::Base
         args[:lat] = (stop.search("x")).inner_html
         args[:lng] = (stop.search("y")).inner_html
 
-        stop = Stop.find_by_number(:first, args[:number])
-        stop ||= Stop.new(args)
-        stop.save!
-        route.stops << stop
+        puts "Adding stop: '#{args[:name]}': '#{args[:number]}'."
+
+        stop = Stop.find_by_number(args[:number])
+        if stop
+          puts "Found stop already" if stop
+        else
+          stop = Stop.new(args)
+          stop.save!
+        end
+        RoutesStops.new(:route_id => route.id, :stop_id => stop.id).save!
       end
       route.save!
-
-      puts " done."
     end
   end
 
