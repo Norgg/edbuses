@@ -1,40 +1,43 @@
-<% form_for :hitch, :url => { :action => "lookup" }, :html => { :method => :get } do |f|%>
+<form>
   <p class="from">
-    <%= f.label :from_location, "Where are you?" %><br/>
-    <%= f.text_field :from_location, :value => @place %>
+    <label for="from">Where are you?</label><br/>
+    <input id="from" name="from" value="<%=h @place%>"/>
   </p>
-  <p class="submit"><%= f.submit "Find buses!" %></p>
-<% end %>
+  <p class="submit">
+    <input type="submit" value="Find buses!">
+  </p>
+</form>
 
-<h2>Buses from <%=h(sanitize(@place)) %></h2>
+<% if @place %>
+  <h2>Buses from <%=h(sanitize(@place)) %></h2>
 
-<% for stop in @stops %>
-  <h3><%= stop.name %>: <%= stop.number%></h3>
+  <% for stop in @stops %>
+    <h3><%= stop.name %>: <%= stop.number%></h3>
 
-  <div id="stopMap<%=stop.number%>" class="stopMap">
-    <script type="text/javascript" src="http://www.google.com/jsapi?key=<%=APIKEY%>"></script>
-    <script type="text/javascript">
-      google.load("maps", "2");
+    <div id="stopMap<%=stop.number%>" class="stopMap">
+      <script type="text/javascript" src="http://www.google.com/jsapi?key=<%=APIKEY%>"></script>
+      <script type="text/javascript">
+        google.load("maps", "2");
 
-      function initialize() {
-        var map = new GMap2(document.getElementById("stopMap<%=stop.number%>"));
-        var latlng = new GLatLng(<%=stop.lat%>, <%=stop.lng%>)
-        map.setCenter(latlng, 14);
-        map.addOverlay(new GMarker(latlng));
-      }
-      google.setOnLoadCallback(initialize);
-    </script>
-  </div>
+        function initialize() {
+          var map = new GMap2(document.getElementById("stopMap<%=stop.number%>"));
+          var latlng = new GLatLng(<%=stop.lat%>, <%=stop.lng%>)
+          map.setCenter(latlng, 14);
+          map.addOverlay(new GMarker(latlng));
+        }
+        google.setOnLoadCallback(initialize);
+      </script>
+    </div>
 
-  <table class="times">
-  <tr><th>Route</th><th>Destination</th><th>Arrival Time</th></tr>
-  <% for time in stop.times %>
-    <tr>
-      <td><%= time[:route] %></td>
-      <td><%= time[:dest] %></td>
-      <td><%= time[:time] %></td>
-    </tr>
+    <table class="times">
+    <tr><th>Route</th><th>Destination</th><th>Arrival Time</th></tr>
+    <% for time in stop.times %>
+      <tr>
+        <td><%= time[:route] %></td>
+        <td><%= time[:dest] %></td>
+        <td><%= time[:time] %></td>
+      </tr>
+    <% end %>
+    </table>
   <% end %>
-  </table>
 <% end %>
-
